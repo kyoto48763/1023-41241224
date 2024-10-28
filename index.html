@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打磚塊遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="difficultyMenu">
+            <h1>選擇遊戲難度</h1>
+            <button onclick="startGame('easy')">簡單</button>
+            <button onclick="startGame('medium')">中等</button>
+            <button onclick="startGame('hard')">困難</button>
+        </div>
+
+        <div id="themeMenu">
+            <h2>選擇背景主題</h2>
+            <select id="themeSelect" onchange="changeTheme()">
+                <option value="night">夜空</option>
+                <option value="forest">森林</option>
+            </select>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
